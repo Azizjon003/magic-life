@@ -1,0 +1,114 @@
+reen: #55c57a
+DarkGreen: #28b485
+
+*/
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+  width: 100%;
+}
+.flex {
+  letter-spacing: 2rem;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex h1 {
+  margin: 0;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.flex h2 {
+  animation-name: moveLeft1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.flex button {
+  height: 5rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 2rem;
+  animation-name: btnpull;
+  animation-duration: 1s;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+.flex button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: btnmain 1s infinite;
+}
+/* .flex button:hover::after {
+  transform: scale(2);
+  transition: 1s;
+  opacity: 0;
+} */
+.flex button:hover {
+  box-shadow: 0px 0px 20px rgba(250, 250, 250, 0.658);
+}
+.flex h2 {
+  width: 70%;
+  text-align: center;
+}
+.logo {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  width: 5%;
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveLeft1 {
+  0% {
+    opacity: 0;
+    transform: translate(20rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes btnmain {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
