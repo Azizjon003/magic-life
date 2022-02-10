@@ -1,0 +1,22 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  background-color: #eee;
+  font-size: 1.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: $space-vertical;
+  }
+  @include clearfix;
+  .col-1-of-2 {
+    background-color: orangered;
+    float: left;
+    height: 5rem;
+    &:not(:last-child) {
+      margin-right: $space-gorizontal;
+    }
+    width: calc((100% - #{$space-gorizontal}) / 2);
+  }
+  // row-gap: $space-vertical;
+  // column-gap: $space-gorizontal;
+}
