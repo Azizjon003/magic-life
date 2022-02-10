@@ -1,0 +1,38 @@
+.header {
+  background-image: $linear-gradient, url(./img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  .logo {
+    align-self: flex-start;
+    width: 8%;
+    margin: 2rem 2rem;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  h1 {
+    font-size: 8rem;
+    font-weight: 60;
+    letter-spacing: 8px;
+    color: white;
+    animation-duration: 3s;
+    animation-name: moveleft;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    animation-duration: 2s;
+    animation-name: moveleft;
+  }
+}
