@@ -139,4 +139,9 @@ html {
   width: calc(3 * (100% - 18rem) / 4 + 12rem);
 }
 
+.section_about {
+  padding: 25rem 0rem;
+  background-color: #f7f7f7;
+}
+
 /*# sourceMappingURL=style.css.map */
