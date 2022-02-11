@@ -24,3 +24,26 @@
     animation-duration: 0.5s;
   }
 }
+.btn-text {
+  transition: all 0.2s;
+
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    color: $greencolor;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid $greencolor;
+    background-color: #f7f7f7;
+  }
+  &:hover {
+    color: #fff;
+    padding: 3px;
+    background-color: $greencolor;
+    transform: translateY(-5px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}

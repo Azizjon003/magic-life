@@ -1,5 +1,5 @@
 @import "base/reset";
-
+@import "base/utilities";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "layout/header.scss";
@@ -7,3 +7,5 @@
 @import "base/animation.scss";
 @import "layout/grid";
 @import "pages/home";
+@import "base/typography";
+@import "components/composition";
