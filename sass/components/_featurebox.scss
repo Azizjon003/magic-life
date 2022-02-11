@@ -1,0 +1,26 @@
+.features-card {
+  transition: all 0.5s;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: rgba(#fff, 0.8);
+
+  .features-icon {
+    font-size: 7rem;
+    background-image: $linear-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  &-name {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    color: rgb(119, 119, 119);
+  }
+  .paragraf {
+    font-size: 1.6rem;
+    color: rgb(119, 119, 119);
+  }
+  &:hover {
+    transform: translateY(-3rem) scale(1.1);
+  }
+}
