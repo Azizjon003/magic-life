@@ -1,0 +1,66 @@
+.card {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  transition: all 2s;
+  &__section {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    box-shadow: 0 1.5rem 3rem rgba(black, 0.4);
+    perspective: 150rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+  }
+  .section__front {
+    background-color: white;
+  }
+  .section__back {
+    background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
+    transform: rotateY(-180deg);
+  }
+  .section__back__2 {
+    background-image: linear-gradient(to bottom right, #2998ff, #5643fa);
+  }
+  .section__back__3 {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(126, 213, 111, 1),
+      rgba(40, 180, 133, 1)
+    );
+  }
+  &:hover {
+    .section__front {
+      transform: rotateY(180deg);
+    }
+    .section__back {
+      transform: rotateY(0);
+    }
+  }
+  .card_photo {
+    width: 100%;
+    height: 40%;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-blend-mode: screen;
+    &__1 {
+      background-image: linear-gradient(to bottom right, #ffb900, #ff7730),
+        url(/magic-life/img/nat-5.jpg);
+    }
+    &__2 {
+      background-image: linear-gradient(to bottom right, #2998ff, #5643fa),
+        url(/magic-life/img/nat-6.jpg);
+    }
+    &__3 {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba(126, 213, 111, 1),
+          rgba(40, 180, 133, 1)
+        ),
+        url(/magic-life/img/nat-7.jpg);
+    }
+  }
+}
