@@ -9,21 +9,6 @@
   font-size: 500;
   margin: 0 auto;
   position: relative;
-
-  animation-name: button_move;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  &_1 {
-    display: inline-block;
-    width: 20rem;
-    height: 5rem;
-    background-color: white;
-    color: #333;
-    border: none;
-    border-radius: 2rem;
-    font-size: 500;
-    margin: 0 auto;
-  }
   &:hover::after {
     cursor: pointer;
     content: " ";
@@ -39,6 +24,10 @@
     animation-duration: 0.5s;
   }
 }
+// animation-name: button_move;
+// animation-duration: 2s;
+// animation-timing-function: ease-in-out;
+
 .btn-text {
   transition: all 0.2s;
 
@@ -64,4 +53,35 @@
 }
 .back_btn {
   padding: 1.5rem 0;
+}
+.submit_1 {
+  display: inline-block;
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 2rem;
+  font-size: 500;
+  margin: 0 auto;
+  // position: relative;
+  &:hover::after {
+    cursor: pointer;
+    content: " ";
+    width: 20rem;
+    height: 5rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 2rem;
+    top: 31rem;
+    left: 7rem;
+    z-index: -1;
+    animation-name: buttonhover;
+    animation-duration: 0.5s;
+  }
+}
+.btn_color {
+  background-image: $linear-gradient;
+  color: white;
+  width: 25rem;
 }

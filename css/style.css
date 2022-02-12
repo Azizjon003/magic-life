@@ -125,20 +125,6 @@ html {
   font-size: 500;
   margin: 0 auto;
   position: relative;
-  animation-name: button_move;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.submit_1 {
-  display: inline-block;
-  width: 20rem;
-  height: 5rem;
-  background-color: white;
-  color: #333;
-  border: none;
-  border-radius: 2rem;
-  font-size: 500;
-  margin: 0 auto;
 }
 .submit:hover::after {
   cursor: pointer;
@@ -179,6 +165,38 @@ html {
 
 .back_btn {
   padding: 1.5rem 0;
+}
+
+.submit_1 {
+  display: inline-block;
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 2rem;
+  font-size: 500;
+  margin: 0 auto;
+}
+.submit_1:hover::after {
+  cursor: pointer;
+  content: " ";
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 2rem;
+  top: 31rem;
+  left: 7rem;
+  z-index: -1;
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+}
+
+.btn_color {
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  color: white;
+  width: 25rem;
 }
 
 @keyframes buttonhover {
