@@ -1,0 +1,51 @@
+.footer {
+  background-color: #333;
+  padding: 10rem 2rem;
+}
+.logo_name {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(126, 213, 111, 1),
+    rgba(40, 180, 133, 1)
+  );
+  width: 20rem;
+  font-size: 3rem;
+  margin: 0 auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer_menu {
+  padding-top: 2rem;
+  border-top: 2px solid white;
+  color: white;
+  line-height: 1.6;
+  a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(126, 213, 111, 1),
+        rgba(40, 180, 133, 1)
+      );
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transform: scale(1.2) skewY(3deg);
+      background-color: #333;
+      border: 1px solid white;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    }
+  }
+}
