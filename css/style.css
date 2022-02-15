@@ -487,4 +487,67 @@ html {
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
 }
 
+.navigation_button {
+  width: 7rem;
+  height: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  z-index: 400;
+  background-color: white;
+}
+
+.navigation_background {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 300;
+  transition: all 0.8s;
+}
+
+.navigation_checkbox {
+  display: none;
+}
+.navigation_checkbox:checked ~ .navigation_background {
+  transform: scale(60);
+}
+
+.navigation_list {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  z-index: 600;
+  top: 30%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s cubic-bezier(0.77, 0.24, 0.35, 1.47);
+}
+.navigation_list a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: white;
+  background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 220%;
+  transition: all 1s;
+}
+.navigation_list a:hover {
+  color: #28b485;
+  background-position: 100%;
+}
+
+.navigation_checkbox:checked ~ .navigation_list {
+  left: 40%;
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=style.css.map */
